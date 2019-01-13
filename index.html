@@ -1,12 +1,210 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
 </head>
 <body>
+    <img class="img" src="https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.2365-6/37289693_368051240391220_2346560587669962752_n.gif?_nc_cat=107&amp;_nc_ht=scontent.fmkc1-1.fna&amp;oh=1b98e1e2f9682ecfe35fc4fe58078bdf&amp;oe=5CCDE3ED" alt="animated positions" title="Demo lips geometry showing each viseme" style="width:100%;max-width:300pt"> Animated Example
+    <table width="100%" border="0">
+        <tbody>
+          <tr>
+            <td width="50%"><table width="100%" id="pvowels">
+                <tbody>
+                  <tr>
+                    <td colspan="4" class="hints">single vowels</td>
+                  </tr>
+                  <tr class="brE">
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɪ</td>
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">i</td>
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ʊ</td>
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">u</td>
+                  </tr>
+                  <tr class="amE" style="display: none">
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɪ</td>
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">i</td>
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ʊ</td>
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">u</td>
+                  </tr>
+                  <tr class="hints">
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%">sh<u>i</u>p</td>
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%">sh<u>ee</u>p</td>
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%">b<u>oo</u>k</td>
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%">sh<u>oo</u>t</td>
+                  </tr>
+                  <tr class="brE">
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">e</td>
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɜ</td>
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ə</td>
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɔ</td>
+                  </tr>
+                  <tr class="amE" style="display: none">
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɛ</td>
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɜ</td>
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ə</td>
+                    <td width="25%" align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɔ</td>
+                  </tr>
+                  <tr class="hints">
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%">l<u>e</u>ft</td>
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%">h<u>er</u></td>
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%">teach<u>er</u></td>
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%">d<u>oor</u></td>
+                  </tr>
+                  <tr class="brE">
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">æ</td>
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ʌ</td>
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɒ</td>
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɑ</td>
+                  </tr>
+                  <tr class="amE" style="display: none">
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">æ</td>
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ʌ</td>
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɒ</td>
+                    <td align="center" bgcolor="#CCCCFF" onclick="writeText(this.innerHTML);">ɑ</td>
+                  </tr>
+                  <tr class="hints">
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%">h<u>a</u>t</td>
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%"><u>u</u>p</td>
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%"><u>o</u>n</td>
+                    <td class="hints" align="center" bgcolor="#ccccff" width="25%">f<u>ar</u></td>
+                  </tr>
+                </tbody>
+            </table></td>
+            <td width="50%"><table width="100%" border="0" id="pdipthongs" align="right">
+                <tbody>
+                  <tr>
+                    <td colspan="4" class="hints">diphthongs</td>
+                  </tr>
+                  <tr class="brE">
+                    <td width="25%" align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">eɪ</td>
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">ɔɪ</td>
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">aɪ</td>
+                    </tr>
+                  <tr class="amE" style="display: none">
+                    <td width="33%" align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">eɪ</td>
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">ɔɪ</td>
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">aɪ</td>
+                    </tr>
+                  <tr class="hints">
+                    <td class="hints" align="center" bgcolor="#FFFFBB" width="25%">w<u>ai</u>t</td>
+                    <td class="hints" align="center" bgcolor="#FFFFBB" width="25%">c<u>oi</u>n</td>
+                    <td class="hints" align="center" bgcolor="#FFFFBB" width="25%">l<u>i</u>ke</td>
+                    </tr>
+                  <tr class="brE">
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">eə</td>
+                    <td width="25%" align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">ɪə</td>
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">ʊə</td>
+                    </tr>
+                  <tr class="amE" style="display: none">
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">eə</td>
+                    <td width="33%" align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">ɪə</td>
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">ʊə</td>
+                    </tr>
+                  <tr class="hints">
+                    <td class="hints" align="center" bgcolor="#FFFFBB" width="25%">h<u>air</u></td>
+                    <td class="hints" align="center" bgcolor="#FFFFBB" width="25%">h<u>ere</u></td>
+                    <td class="hints" align="center" bgcolor="#FFFFBB" width="25%">t<u>ou</u>rist</td>
+                    </tr>
+                  <tr class="brE">
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">əʊ</td>
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">aʊ</td>
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">/</td>
+                    </tr>
+                  <tr class="amE" style="display: none">
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">oʊ</td>
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">aʊ</td>
+                    <td align="center" bgcolor="#FFFFBB" onclick="writeText(this.innerHTML);">/</td>
+                    </tr>
+                  <tr class="hints">
+                    <td class="hints" align="center" bgcolor="#FFFFBB" width="25%">sh<u>ow</u></td>
+                    <td class="hints" align="center" bgcolor="#FFFFBB" width="25%">m<u>ou</u>th</td>
+                    <td class="hints" align="center" bgcolor="#FFFFBB" width="25%">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table></td>
+          </tr>
+          <tr>
+            <td colspan="2"><table width="100%" id="pconsonants" border="0">
+                <tbody>
+                  <tr>
+                    <td colspan="8" class="hints">unvoiced consonants</td>
+                  </tr>
+                  <tr>
+                    <td width="12%" align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">p</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">f</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">θ</td>
+                    <td width="12%" align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">t</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">s</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">ʃ</td>
+                    <td width="12%" align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">ʧ</td>
+                    <td width="12%" align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">k</td>
+                  </tr>
+                  <tr class="hints">
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>p</u>ea</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>f</u>ree</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>th</u>ing</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>t</u>ree</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>s</u>ee</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>sh</u>eep</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>ch</u>eese</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>c</u>oin</td>
+                  </tr>
+                  <tr>
+                    <td colspan="8" align="center" class="hints">voiced consonants</td>
+                    </tr>
+                  <tr>
+                    <td width="12%" align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">b</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">v</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">ð</td>
+                    <td width="12%" align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">d</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">z</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">ʒ</td>
+                    <td width="12%" align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">ʤ</td>
+                    <td width="12%" align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">g</td>
+                  </tr>
+                  <tr class="hints">
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>b</u>oat</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>v</u>ideo</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>th</u>is</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>d</u>og</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>z</u>oo</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%">televi<u>s</u>ion</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>j</u>oke</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>g</u>o</td>
+                  </tr>
+                  <tr>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">m</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">n</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">ŋ</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">h</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">w</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">l</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">r</td>
+                    <td align="center" bgcolor="#F9CAF5" onclick="writeText(this.innerHTML);">j</td>
+                  </tr>
+                  <tr class="hints">
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>m</u>ouse</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>n</u>ow</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%">thi<u>ng</u></td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>h</u>ope</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>w</u>e</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>l</u>ove</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>r</u>un</td>
+                    <td class="hints" align="center" bgcolor="#F9CAF5" width="12%"><u>y</u>ou</td>
+                  </tr>
+               
+                </tbody>
+            </table>
+            <br><br>
+        <!-- <input name="ptext" type="text" id="ptext" maxlength="50" size="30"><br><br><p align="center"><button class="btn" data-clipboard-target="#ptext">copy to clipboard</button></p>-->
+        </tbody>
+      </table>
+    
 
 </body>
 </html>
