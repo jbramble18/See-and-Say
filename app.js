@@ -1,6 +1,6 @@
 
 
-  // Initialize Firebase
+ 
   var config = {
     apiKey: "AIzaSyBtpr09-F0k89EO6_lAqt7zwP1iy4FVkW0",
     authDomain: "see-n-say-14b3b.firebaseapp.com",
@@ -14,8 +14,9 @@
   var database = firebase.database();
 
   function displayGifs() {
+    var animal = $(this).attr('data-name');
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + image + "&api_key=DOIPJ1030YI69wiQkcqGIvkzMaK4C0Jh&limit=1";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=DOIPJ1030YI69wiQkcqGIvkzMaK4C0Jh&limit=1";
 
     $.ajax({
         url:queryURL,
@@ -34,3 +35,5 @@
         }
     })
   }
+
+  
