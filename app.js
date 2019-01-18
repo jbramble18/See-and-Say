@@ -242,7 +242,7 @@ $("#yorkie").on("click", function () {
 // var database = firebase.database();
 
 $(".button").on('click', function (event)  {
-
+  event.preventDefault();
 
   var animal = $(this).attr("data-type");
 
