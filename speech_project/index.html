@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <!-- meta tag for viewport detection -->
@@ -12,8 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- link to local css stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- link to firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+
 
 </head>
+
 <body>
 
     <!-- container for the entire app -->
@@ -32,9 +37,9 @@
                             <input placeholder="age" id="age" type="text" class="validate">
                         </div>
                         <div class="input-field">
-                            <input placeholder="email" id="age" type="text" class="validate">
+                            <input placeholder="email" id="email" type="text" class="validate">
                         </div>
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <button class="btn waves-effect waves-light" type="submit" id="submit" name="action">Submit
                             <i class="material-icons right">send</i>
                         </button>
                     </form>
@@ -44,44 +49,47 @@
 
         <!-- display box for gifs and vismes -->
         <div id="displayBox" class="col s12 z-depth-5">
+            <div class = "row">
             <div class="col s6">
-                <img src="" alt="">
+                <div id="gifs-appear-here" class="gifs"></div>
+
             </div>
             <div class="col s6">
-                <img src="" alt="">
+                <div id="visme-images-here" class="visme"></div>
             </div>
         </div>
-        
+        </div>
+
 
         <!-- carousel for singel vowels -->
         <div id="test-swipe-1" class="col s12">
             <div id="singleVowelCarousel" class="carousel">
                 <a href="#one!" class="carousel-item">
-                    <button id="iguanaButton">iguana</button>
+                    <button id="iguanaButton" data-type="iguana" class="button">iguana</button>
                 </a>
                 <a href="#two!" class="carousel-item">
-                    <button id="catButton">cat</button>
+                    <button id="catButton" data-type="cat" class="button">cat</button>
                 </a>
                 <a href="#three!" class="carousel-item">
-                    <button id="eagleButton">eagle</button>
+                    <button id="eagleButton" data-type="eagles" class="button">eagle</button>
                 </a>
                 <a href="#four!" class="carousel-item">
-                    <button id="hamsterButton">hamster</button>
+                    <button id="hamsterButton" data-type="hamster" class="button">hamster</button>
                 </a>
                 <a href="#five!" class="carousel-item">
-                    <button id="umbrellabirdButton">umbrella bird</button>
+                    <button id="umbrellabirdButton" data-type="umbrellabird" class="button">umbrella bird</button>
                 </a>
                 <a href="#six!" class="carousel-item">
-                    <button id="shepherdButton">shepherd</button>
+                    <button id="shepherdButton" data-type="shepherd dog" class="button">shepherd</button>
                 </a>
                 <a href="#seven!" class="carousel-item">
-                    <button id="ostrichButton">ostrich</button>
+                    <button id="ostrichButton" data-type="ostrich" class="button">ostrich</button>
                 </a>
                 <a href="#eight!" class="carousel-item">
-                    <button id="poodleButton">poodle</button>
+                    <button id="poodleButton" data-type="poodle" class="button">poodle</button>
                 </a>
                 <a href="#nine!" class="carousel-item">
-                    <button id="gopherButton">gopher</button>
+                    <button id="gopherButton" data-type="gopher" class="button">gopher</button>
                 </a>
             </div>
         </div>
@@ -90,37 +98,37 @@
         <div id="test-swipe-2" class="col s12">
             <div id="voicedConsonantCarousel" class="carousel">
                 <a href="#one!" class="carousel-item">
-                    <button id="batButton">bat</button>
+                    <button id="batButton" data-type="bat" class="button">bat</button>
                 </a>
                 <a href="#two!" class="carousel-item">
-                    <button id="monkeyButton">monkey</button>
+                    <button id="monkeyButton" data-type="monkey" class="button">monkey</button>
                 </a>
                 <a href="#three!" class="carousel-item">
-                    <button id="flamingoButton">flamingo</button>
+                    <button id="flamingoButton" data-type="flamingo" class="button">flamingo</button>
                 </a>
                 <a href="#four!" class="carousel-item">
-                    <button id="dolphinButton">dolphin</button>
+                    <button id="dolphinButton" data-type="dolphin" class="button">dolphin</button>
                 </a>
                 <a href="#five!" class="carousel-item">
-                    <button id="zebraButton">zebra</button>
+                    <button id="zebraButton" data-type="zebra" class="button">zebra</button>
                 </a>
                 <a href="#six!" class="carousel-item">
-                    <button id="waspButton">wasp</button>
+                    <button id="waspButton" data-type="wasp" class="button">wasp</button>
                 </a>
                 <a href="#seven!" class="carousel-item">
-                    <button id="llamaButton">llama</button>
+                    <button id="llamaButton" data-type="llama" class="button">llama</button>
                 </a>
                 <a href="#eight!" class="carousel-item">
-                    <button id="jackrussellButton">jack russell</button>
+                    <button id="jackrussellButton" data-type="jack russell" class="button">jack russell</button>
                 </a>
                 <a href="#nine!" class="carousel-item">
-                    <button id="raccoonButton">raccoon</button>
+                    <button id="raccoonButton" data-type="raccoon" class="button">raccoon</button>
                 </a>
                 <a href="#ten!" class="carousel-item">
-                    <button id="goatButton">goat</button>
+                    <button id="goatButton" data-type="goat" class="button">goat</button>
                 </a>
                 <a href="#eleven!" class="carousel-item">
-                    <button id="yorkieButton">yorkie</button>
+                    <button id="yorkieButton" data-type="yorkie" class="button">yorkie</button>
                 </a>
             </div>
         </div>
@@ -129,28 +137,28 @@
         <div id="test-swipe-3" class="col s12">
             <div id="unvoicedConsonantCarousel" class="carousel">
                 <a href="#one!" class="carousel-item">
-                    <button id="peacockButton">peacock</button>
+                    <button id="peacockButton" data-type="peacock" class="button">peacock</button>
                 </a>
                 <a href="#two!" class="carousel-item">
-                    <button id="frogButton">frog</button>
+                    <button id="frogButton" data-type="frog" class="button">frog</button>
                 </a>
                 <a href="#three!" class="carousel-item">
-                    <button id="slothButton">sloth</button>
+                    <button id="slothButton" data-type="sloth" class="button">sloth</button>
                 </a>
                 <a href="#four!" class="carousel-item">
-                    <button id="tigerButton">tiger</button>
+                    <button id="tigerButton" data-type="tiger" class="button">tiger</button>
                 </a>
                 <a href="#five!" class="carousel-item">
-                    <button id="snakeButton">snake</button>
+                    <button id="snakeButton" data-type="snake" class="button">snake</button>
                 </a>
                 <a href="#six!" class="carousel-item">
-                    <button id="sharkButton">shark</button>
+                    <button id="sharkButton" data-type="shark" class="button">shark</button>
                 </a>
                 <a href="#seven!" class="carousel-item">
-                    <button id="cheetahButton">cheetah</button>
+                    <button id="cheetahButton" data-type="cheetah" class="button">cheetah</button>
                 </a>
                 <a href="#eight!" class="carousel-item">
-                    <button id="kangarooButton">kangaroo</button>
+                    <button id="kangarooButton" data-type="kangaroo" class="button">kangaroo</button>
                 </a>
             </div>
         </div>
@@ -177,4 +185,5 @@
     <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>

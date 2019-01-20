@@ -232,3 +232,37 @@ button {
     background-size: cover;
     background-position: center;
 }
+/* css styling for the gifs */
+
+.gifs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    overflow: hidden;
+    justify-content: space-evenly;
+    
+}
+
+
+.image {
+    float: left;
+    margin: 20px;
+    width: 250px;
+    height: 200px;
+    border-style: solid;
+    border-color: black;
+}
+
+.visme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    float: none;
+    width: 250px;
+    height: 200px;
+    margin: 9px;
+    
+
+}

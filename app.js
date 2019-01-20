@@ -1,6 +1,6 @@
 var singleVowels = ["iguana", "cat", "eagle", "hampster", "umbrellabird", "sheperd", "ostrich", "poodle", "gopher"];
 
-var diphthongs = ["bear", "caiman", "snowyowl", "koi", "earwig", "mouse", "hyena", "cougar"];
+var diphthongs = ["bear", "caiman", "snowy owl", "koi", "earwig", "mouse", "hyena", "cougar"];
 
 var unvoicedConsonants = ["peacock", "frog", "sloth", "tiger", "snake", "shark", "cheetah", "kangaroo"];
 
@@ -229,19 +229,75 @@ $("#yorkie").on("click", function () {
 
 
 
-// var config = {
-//   apiKey: "AIzaSyBtpr09-F0k89EO6_lAqt7zwP1iy4FVkW0",
-//   authDomain: "see-n-say-14b3b.firebaseapp.com",
-//   databaseURL: "https://see-n-say-14b3b.firebaseio.com",
-//   projectId: "see-n-say-14b3b",
-//   storageBucket: "see-n-say-14b3b.appspot.com",
-//   messagingSenderId: "689086528373"
-// };
-// firebase.initializeApp(config);
+var config = {
+  apiKey: "AIzaSyBtpr09-F0k89EO6_lAqt7zwP1iy4FVkW0",
+  authDomain: "see-n-say-14b3b.firebaseapp.com",
+  databaseURL: "https://see-n-say-14b3b.firebaseio.com",
+  projectId: "see-n-say-14b3b",
+  storageBucket: "see-n-say-14b3b.appspot.com",
+  messagingSenderId: "689086528373"
+};
 
-// var database = firebase.database();
+firebase.initializeApp(config);
 
-$(".button").on('click', function (event)  {
+var database = firebase.database();
+
+var provider = new firebase.auth.FacebookAuthProvider();
+
+$("#submit").on("click", function (event) {
+  event.preventDefault();
+
+  var name = $("#name").val().trim();
+  var age = $("#age").val().trim();
+  var email = $("#email").val().trim();
+  var sounds = $("#sounds").val().trim();
+
+  var newUser = {
+    name: name,
+    age: age,
+    email: email,
+    sounds: sounds
+  };
+
+  database.ref().push(newUser);
+
+  console.log(newUser.name);
+  console.log(newUser.age);
+  console.log(newUser.email);
+  console.log(newUser.sounds);
+
+  $("#name").val("");
+  $("#age").val("");
+  $("#email").val("");
+  $("#sounds").val("");
+
+})
+
+// firebase.auth().signInWithPopup(provider).then(function(result) {
+//   // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+//   var token = result.credential.accessToken;
+//   // The signed-in user info.
+//   var user = result.user;
+//   // ...
+// }).catch(function(error) {
+//   // Handle Errors here.
+//   var errorCode = error.code;
+//   var errorMessage = error.message;
+//   // The email of the user's account used.
+//   var email = error.email;
+//   // The firebase.auth.AuthCredential type that was used.
+//   var credential = error.credential;
+//   // ...
+// });
+
+// firebase.auth().signOut().then(function() {
+//   // Sign-out successful.
+// }).catch(function(error) {
+//   // An error happened.
+// });
+
+
+$(".button").on('click', function (event) {
   event.preventDefault();
 
   var animal = $(this).attr("data-type");
@@ -274,9 +330,13 @@ $(".button").on('click', function (event)  {
   })
 });
 
+
+
+
+
 // $(".button").on('click', function (event) {
 //   event.preventDefault();
-  
+
 
 //   displayGifs();
 // });
