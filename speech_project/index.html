@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- meta tag for viewport detection -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link to google font -->
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <!-- link to materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- link to materialize css library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- link to local css stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <!-- container for the entire app -->
+    <div class="container">
+
+        <!-- drop down for login form -->
+        <ul class="collapsible z-depth-5">
+            <li>
+                <div class="collapsible-header">Sign In</div>
+                <div class="collapsible-body">
+                    <form action="submit">
+                        <div class="input-field">
+                            <input placeholder="name" id="name" type="text" class="validate">
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="age" id="age" type="text" class="validate">
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="email" id="age" type="text" class="validate">
+                        </div>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+
+        <!-- display box for gifs and vismes -->
+        <div id="displayBox" class="col s12 z-depth-5">
+            <div class="col s6">
+                <img src="" alt="">
+            </div>
+            <div class="col s6">
+                <img src="" alt="">
+            </div>
+        </div>
+        
+
+        <!-- carousel for singel vowels -->
+        <div id="test-swipe-1" class="col s12">
+            <div id="singleVowelCarousel" class="carousel">
+                <a href="#one!" class="carousel-item">
+                    <button id="iguanaButton">iguana</button>
+                </a>
+                <a href="#two!" class="carousel-item">
+                    <button id="catButton">cat</button>
+                </a>
+                <a href="#three!" class="carousel-item">
+                    <button id="eagleButton">eagle</button>
+                </a>
+                <a href="#four!" class="carousel-item">
+                    <button id="hamsterButton">hamster</button>
+                </a>
+                <a href="#five!" class="carousel-item">
+                    <button id="umbrellabirdButton">umbrella bird</button>
+                </a>
+                <a href="#six!" class="carousel-item">
+                    <button id="shepherdButton">shepherd</button>
+                </a>
+                <a href="#seven!" class="carousel-item">
+                    <button id="ostrichButton">ostrich</button>
+                </a>
+                <a href="#eight!" class="carousel-item">
+                    <button id="poodleButton">poodle</button>
+                </a>
+                <a href="#nine!" class="carousel-item">
+                    <button id="gopherButton">gopher</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- carousel for voiced consonants -->
+        <div id="test-swipe-2" class="col s12">
+            <div id="voicedConsonantCarousel" class="carousel">
+                <a href="#one!" class="carousel-item">
+                    <button id="batButton">bat</button>
+                </a>
+                <a href="#two!" class="carousel-item">
+                    <button id="monkeyButton">monkey</button>
+                </a>
+                <a href="#three!" class="carousel-item">
+                    <button id="flamingoButton">flamingo</button>
+                </a>
+                <a href="#four!" class="carousel-item">
+                    <button id="dolphinButton">dolphin</button>
+                </a>
+                <a href="#five!" class="carousel-item">
+                    <button id="zebraButton">zebra</button>
+                </a>
+                <a href="#six!" class="carousel-item">
+                    <button id="waspButton">wasp</button>
+                </a>
+                <a href="#seven!" class="carousel-item">
+                    <button id="llamaButton">llama</button>
+                </a>
+                <a href="#eight!" class="carousel-item">
+                    <button id="jackrussellButton">jack russell</button>
+                </a>
+                <a href="#nine!" class="carousel-item">
+                    <button id="raccoonButton">raccoon</button>
+                </a>
+                <a href="#ten!" class="carousel-item">
+                    <button id="goatButton">goat</button>
+                </a>
+                <a href="#eleven!" class="carousel-item">
+                    <button id="yorkieButton">yorkie</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- carousel for unvoiced consonants -->
+        <div id="test-swipe-3" class="col s12">
+            <div id="unvoicedConsonantCarousel" class="carousel">
+                <a href="#one!" class="carousel-item">
+                    <button id="peacockButton">peacock</button>
+                </a>
+                <a href="#two!" class="carousel-item">
+                    <button id="frogButton">frog</button>
+                </a>
+                <a href="#three!" class="carousel-item">
+                    <button id="slothButton">sloth</button>
+                </a>
+                <a href="#four!" class="carousel-item">
+                    <button id="tigerButton">tiger</button>
+                </a>
+                <a href="#five!" class="carousel-item">
+                    <button id="snakeButton">snake</button>
+                </a>
+                <a href="#six!" class="carousel-item">
+                    <button id="sharkButton">shark</button>
+                </a>
+                <a href="#seven!" class="carousel-item">
+                    <button id="cheetahButton">cheetah</button>
+                </a>
+                <a href="#eight!" class="carousel-item">
+                    <button id="kangarooButton">kangaroo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- line break for adjusted ui spacing -->
+        </br>
+
+        <!-- tabs for sound selection -->
+        <ul id="tabs-swipe-demo " class="tabs tabs-fixed-width z-depth-5">
+            <li class="tab col s3"><a href="#test-swipe-1" class="black-text">Single Vowels</a></li>
+            <li class="tab col s3"><a href="#test-swipe-2" class="black-text">Voiced Consonants</a></li>
+            <li class="tab col s3"><a href="#test-swipe-3" class="black-text">Unvoiced Consonants</a></li>
+        </ul>
+
+    </div>
+
+    <!-- link to jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- link to materialize javascript library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- link to Tone.js library (sound playback) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.4.10/Tone.min.js"></script>
+    <!-- link to local javascript file -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
