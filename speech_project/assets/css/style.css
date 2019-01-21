@@ -248,8 +248,8 @@ button {
 .image {
     float: left;
     margin: 20px;
-    width: 250px;
-    height: 200px;
+    width: 356px;
+    height: 201px;
     border-style: solid;
     border-color: black;
 }
@@ -260,9 +260,10 @@ button {
     flex-wrap: wrap;
     flex: 1;
     float: none;
-    width: 250px;
-    height: 200px;
-    margin: 9px;
+    width: 356px;
+    height: 201px;
+    margin: 10px;
+    margin-left: 60x;
     
 
 }

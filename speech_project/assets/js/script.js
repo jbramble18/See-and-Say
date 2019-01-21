@@ -73,7 +73,7 @@ $(document).ready(function () {
     }, 1000);
 
     var img = $('<img>')
-    img.attr("src", "assets/images/Ah(1).png");
+    img.attr("src", "assets/images/-i-guana.png");
     img.addClass("visme");
      $(".visme").html(img).show();
 
@@ -98,7 +98,7 @@ $(document).ready(function () {
     }, 1000);
 
     var img = $('<img>')
-    img.attr("src", "assets/images/Ah(1).png");
+    img.attr("src", "assets/images/c-a-t.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -120,7 +120,7 @@ $(document).ready(function () {
     }, 1000);
 
     var img = $('<img>')
-    img.attr("src", "assets/images/Ee(i).png");
+    img.attr("src", "assets/images/-ea-gle.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -142,7 +142,7 @@ $(document).ready(function () {
     }, 1000);
 
     var img = $('<img>')
-    img.attr("src", "assets/images/R(1).png");
+    img.attr("src", "assets/images/h-a-mster.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -164,7 +164,7 @@ $(document).ready(function () {
     }, 1000);
 
     var img = $('<img>')
-    img.attr("src", "assets/images/Uh(turned_v).png");
+    img.attr("src", "assets/images/-u-mbrella bird.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -186,7 +186,7 @@ $(document).ready(function () {
     }, 1000);
 
     var img = $('<img>')
-    img.attr("src", "assets/images/R(1).png");
+    img.attr("src", "assets/images/sh-e-perd.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -208,7 +208,7 @@ $(document).ready(function () {
     }, 1000);
 
     var img = $('<img>')
-    img.attr("src", "assets/images/Ah(1).png");
+    img.attr("src", "assets/images/-o-strich.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -230,7 +230,7 @@ $(document).ready(function () {
     }, 1000);
 
     var img = $('<img>')
-    img.attr("src", "assets/images/W_Ooh.png");
+    img.attr("src", "assets/images/p-oo-dle.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -252,7 +252,7 @@ $(document).ready(function () {
     }, 1000);
 
     var img = $('<img>')
-    img.attr("src", "assets/images/Oh.png");
+    img.attr("src", "assets/images/g-o-pher.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -270,9 +270,12 @@ $(document).ready(function () {
       var player = new Tone.Player("").toMaster();
       player.autostart = true;
     }, 1000);
-
+    
+    M.toast({
+      html: 'Say, Bat!'
+    });
     var img = $('<img>')
-    img.attr("src", "assets/images/M.png");
+    img.attr("src", "assets/images/-b-at.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -287,8 +290,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Monkey!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/M.png");
+    img.attr("src", "assets/images/-m-onkey.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -303,8 +310,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Flamingo!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/D.png");
+    img.attr("src", "assets/images/-f-lamingo.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -319,8 +330,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Dolphin!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/D.png");
+    img.attr("src", "assets/images/-d-olphin.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -335,8 +350,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Zebra!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/S.png");
+    img.attr("src", "assets/images/-z-ebra.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -351,8 +370,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Wasp!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/W_Ooh.png");
+    img.attr("src", "assets/images/-w-asp.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -367,8 +390,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Llama!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/L(1).png");
+    img.attr("src", "assets/images/-ll-ama.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -383,8 +410,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Jack Russell!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/S.png");
+    img.attr("src", "assets/images/-j-ack russell.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -399,8 +430,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Raccoon!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/R(1).png");
+    img.attr("src", "assets/images/-r-accoon.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -415,8 +450,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Goat!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/D.png");
+    img.attr("src", "assets/images/-g-oat.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -431,8 +470,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Yorkie!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/L(1).png");
+    img.attr("src", "assets/images/-y-orkie.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -451,8 +494,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, PeaCock!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/M.png");
+    img.attr("src", "assets/images/-p-eakcock.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -467,8 +514,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Frog!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/F.png");
+    img.attr("src", "assets/images/-f-rog.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -483,8 +534,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Sloth!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/D.png");
+    img.attr("src", "assets/images/slo-th-.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -499,8 +554,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Tiger!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/L(1).png");
+    img.attr("src", "assets/images/-t-iger.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -515,8 +574,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Snake!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/S.png");
+    img.attr("src", "assets/images/-s-nake.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -531,8 +594,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Shark!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/S.png");
+    img.attr("src", "assets/images/-sh-ark.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -547,8 +614,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Cheetah!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/S.png");
+    img.attr("src", "assets/images/-ch-eetah.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -563,8 +634,12 @@ $(document).ready(function () {
       player.autostart = true;
     }, 1000);
 
+    M.toast({
+      html: 'Say, Kangaroo!'
+    });
+
     var img = $('<img>')
-    img.attr("src", "assets/images/Ah(1).png");
+    img.attr("src", "assets/images/-k-angaroo.png");
     img.addClass("visme");
      $(".visme").html(img).show();
   });
@@ -626,12 +701,13 @@ $("#submit").on("click", function (event) {
   var name = $("#name").val().trim();
   var age = $("#age").val().trim();
   var email = $("#email").val().trim();
+  var sound = $("#sound").val().trim();
 
   var newUser = {
     name: name,
     age: age,
     email: email,
-
+    sound: sound
   };
 
   database.ref().push(newUser);
@@ -644,6 +720,7 @@ $("#submit").on("click", function (event) {
   $("#name").val("");
   $("#age").val("");
   $("#email").val("");
+  $("#sound").val("");
 
 
 })
