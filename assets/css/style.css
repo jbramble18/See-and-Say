@@ -1,18 +1,269 @@
+/* inital page reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background for the entire page and global font */
+body {
+    background-image: url(../images/jungle.png);
+    background-size: cover;
+    /* background-position: center; */
+    font-family: 'Concert One', sans-serif;
+    font-weight: bold;
+}
+
+/* global button sizing and font */
+button {
+    width: 300px;
+    height: 200px;
+    font-family: 'Concert One', sans-serif;
+    font-weight: bolder;
+    font-size: 4em;
+    color: cyan;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* styling for the drop down login form */
+.collapsible {
+    border: none;
+    border-radius: 25px;
+}
+.collapsible-header {
+    height: 40px;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.35)), url(../images/flat01.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 25px;
+}
+.collapsible-body {
+    border: none;
+    border-radius: 25px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* height adjustment for the display box */
+#displayBox {
+    height: 260px;
+    border: none;
+    border-radius: 25px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* height adjustment for the carousel boxes */
+#test-swipe-1 {
+    height: 0px;
+    
+}
+#test-swipe-2 {
+    height: 0px;
+    
+}
+#test-swipe-3 {
+    height: 0px;
+    
+}
+
+/* styling for the selection tabs */
+.tabs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(../images/flat04.png);
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    border-radius: 25px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* styling for the single vowel carousel buttons */
+#iguanaButton {
+    background-image: url(../images/iguana.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#catButton {
+    background-image: url(../images/cat.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#eagleButton {
+    background-image: url(../images/eagle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#hamsterButton {
+    background-image: url(../images/hamster.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#umbrellabirdButton {
+    background-image: url(../images/umbrellaBird.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#shepherdButton {
+    background-image: url(../images/shepherd.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#ostrichButton {
+    background-image: url(../images/ostrich.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#poodleButton {
+    background-image: url(../images/poodle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#gopherButton {
+    background-image: url(../images/gopher.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* styling for the voiced consonant carousel buttons */
+#batButton {
+    background-image: url(../images/bat.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#monkeyButton {
+    background-image: url(../images/monkey.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#flamingoButton {
+    background-image: url(../images/flamingo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#dolphinButton {
+    background-image: url(../images/dolphin.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#zebraButton {
+    background-image: url(../images/zebra.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#waspButton {
+    background-image: url(../images/wasp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#llamaButton {
+    background-image: url(../images/llama.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#jackrussellButton {
+    background-image: url(../images/jackrussellterrier.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#raccoonButton {
+    background-image: url(../images/raccoon.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#goatButton {
+    background-image: url(../images/goat.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#yorkieButton {
+    background-image: url(../images/yorkie.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* styling for the unvoiced consonant carousel buttons */
+#peacockButton {
+    background-image: url(../images/peacock.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#frogButton {
+    background-image: url(../images/frog.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#slothButton {
+    background-image: url(../images/sloth.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#tigerButton {
+    background-image: url(../images/tiger.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#snakeButton {
+    background-image: url(../images/snake.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#sharkButton {
+    background-image: url(../images/shark.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#cheetahButton {
+    background-image: url(../images/cheetah.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#kangarooButton {
+    background-image: url(../images/kangaroo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* css styling for the gifs */
+
 .gifs {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 5;
+    flex: 1;
     overflow: hidden;
     justify-content: space-evenly;
     
 }
 
+
 .image {
     float: left;
-    margin: 5px;
-    width: 250px;
-    height: 200px;
+    margin: 20px;
+    width: 356px;
+    height: 201px;
     border-style: solid;
     border-color: black;
+}
+
+.visme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    float: none;
+    width: 356px;
+    height: 201px;
+    margin: 10px;
+    margin-left: 60x;
+    
+
 }
